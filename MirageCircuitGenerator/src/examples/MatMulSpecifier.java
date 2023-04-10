@@ -71,7 +71,7 @@ public class MatMulSpecifier {
 	public static void main(String[] args) {
 
 		// A small universal circuit for testing	
-		int stmtSize = 300;
+		int stmtSize = 30000;
 		int budget = 300000; // max number of constraints for all operations
 		UniversalCircuitGenerator generator = new UniversalCircuitGenerator("univ_circuit", stmtSize, budget);
 		generator.generateCircuit();
