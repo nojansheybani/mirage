@@ -78,7 +78,7 @@ public class MatMulSpecifier {
 		generator.writeCircuitFile();
 		
 		// now specify the input to the universal circuit
-		int dimension = 3;
+		int dimension = 128;
 		MatMulSpecifier specifier = new MatMulSpecifier(generator, dimension);
 		specifier.setInputToUniversalCircuit();
 		generator.getCircuitEvaluator().evaluateCircuit();
